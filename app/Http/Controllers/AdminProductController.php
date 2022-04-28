@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Home;
-use App\Http\Requests\StoreHomeRequest;
-use App\Http\Requests\UpdateHomeRequest;
+use App\Models\AdminProduct;
+use App\Http\Requests\StoreAdminProductRequest;
+use App\Http\Requests\UpdateAdminProductRequest;
 
-class HomeController extends Controller
+class AdminProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('admin.admin');
     }
 
     /**
@@ -31,10 +31,10 @@ class HomeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreHomeRequest  $request
+     * @param  \App\Http\Requests\StoreAdminProductRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreHomeRequest $request)
+    public function store(StoreAdminProductRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Home  $home
+     * @param  \App\Models\AdminProduct  $adminProduct
      * @return \Illuminate\Http\Response
      */
-    public function show(Home $home)
+    public function show(AdminProduct $adminProduct)
     {
         //
     }
@@ -53,22 +53,22 @@ class HomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Home  $home
+     * @param  \App\Models\AdminProduct  $adminProduct
      * @return \Illuminate\Http\Response
      */
-    public function edit(Home $home)
+    public function edit(AdminProduct $adminProduct)
     {
-        //
+        return view();
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateHomeRequest  $request
-     * @param  \App\Models\Home  $home
+     * @param  \App\Http\Requests\UpdateAdminProductRequest  $request
+     * @param  \App\Models\AdminProduct  $adminProduct
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateHomeRequest $request, Home $home)
+    public function update(UpdateAdminProductRequest $request, AdminProduct $adminProduct)
     {
         //
     }
@@ -76,10 +76,10 @@ class HomeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Home  $home
+     * @param  \App\Models\AdminProduct  $adminProduct
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Home $home)
+    public function destroy(AdminProduct $adminProduct)
     {
         //
     }
